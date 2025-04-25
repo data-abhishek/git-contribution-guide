@@ -59,11 +59,6 @@ This guide outlines the process of forking a GitHub repository, cloning it to yo
         ```bash
         git add .
         ```
-    * To stage specific files, use their names:
-        ```bash
-        git add filename1.txt filename2.py
-        ```
-
 4.  **Commit Your Changes:** Use the `git commit` command to record your staged changes with a descriptive message:
     ```bash
     git commit -m "Your concise and informative commit message"
@@ -72,23 +67,11 @@ This guide outlines the process of forking a GitHub repository, cloning it to yo
 
 ## Step 5: Push Your Local Commits to Your Forked Repository on GitHub
 
-1.  **Ensure You Are on the Correct Branch:** It's good practice to work on a separate branch. If you haven't already, you can create and switch to a new branch using:
-    ```bash
-    git checkout -b your-new-branch-name
-    ```
-    Replace `your-new-branch-name` with a descriptive name for your branch.
-
-2.  **Push Your Commits:** Use the `git push` command in the VS Code terminal to upload your local commits to your forked repository on GitHub. You'll typically need to specify the remote name (`origin`) and the branch name:
+1.  **Push Your Commits:** Use the `git push` command in the VS Code terminal to upload your local commits to your forked repository on GitHub. You'll typically need to specify the remote name (`origin`) and the branch name:
     ```bash
     git push origin your-new-branch-name
     ```
-    If this is the first time you're pushing a new branch, you might need to use:
-    ```bash
-    git push -u origin your-new-branch-name
-    ```
-    The `-u` flag sets up a tracking connection between your local branch and the remote branch, so future `git push` commands on that branch can be simpler (`git push`).
-
-3.  **Verify on GitHub:** Go to your forked repository on GitHub in your web browser. You should see your new branch and the commits you just pushed.
+2.  **Verify on GitHub:** Go to your forked repository on GitHub in your web browser. You should see your new branch and the commits you just pushed.
 
 ## Step 6: Create a Pull Request (Optional, for Contributing to the Original Repository)
 
@@ -107,5 +90,3 @@ If your goal is to contribute your changes back to the original repository, you'
 4.  **Write a Descriptive Title and Body:** Provide a clear and concise title for your pull request and a detailed description of the changes you've made and why they are beneficial.
 
 5.  **Click "Create pull request":** This will submit your changes to the maintainers of the original repository for review. They may provide feedback or merge your changes.
-
-Congratulations! You have successfully forked a GitHub repository, made local changes using VS Code and its integrated terminal, and (optionally) created a pull request.
