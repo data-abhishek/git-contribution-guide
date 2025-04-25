@@ -1,6 +1,6 @@
-# Forking a GitHub Repository and Making Local Changes with VS Code and Git Bash
+# Forking a GitHub Repository and Making Local Changes with VS Code Terminal
 
-This guide outlines the process of forking a GitHub repository, cloning it to your local system, making changes using Visual Studio Code (VS Code), and then pushing those changes to your forked repository.
+This guide outlines the process of forking a GitHub repository, cloning it to your local system, making changes using the integrated terminal in Visual Studio Code (VS Code), and then pushing those changes to your forked repository.
 
 ## Step 1: Fork the Repository on GitHub
 
@@ -14,41 +14,41 @@ This guide outlines the process of forking a GitHub repository, cloning it to yo
 
 ## Step 2: Clone Your Forked Repository to Your Local System
 
-1.  **Open Git Bash:** Launch the Git Bash terminal on your local machine.
+1.  **Open VS Code:** Launch Visual Studio Code.
 
-2.  **Navigate to Your Desired Directory:** Use the `cd` command to navigate to the directory where you want to store the cloned repository. For example:
+2.  **Open the Integrated Terminal:** Go to "Terminal" in the top menu and select "New Terminal." This will open a terminal panel within VS Code.
+
+3.  **Navigate to Your Desired Directory:** Use the `cd` command in the VS Code terminal to navigate to the directory where you want to store the cloned repository. For example:
     ```bash
     cd Documents/GitHub
     ```
 
-3.  **Get the Clone URL:** On your forked repository page on GitHub (the one under your username), click the green "Code" button. A dropdown menu will appear. Make sure "HTTPS" is selected and copy the URL provided.
+4.  **Get the Clone URL:** On your forked repository page on GitHub (the one under your username), click the green "Code" button. A dropdown menu will appear. Make sure "HTTPS" is selected and copy the URL provided.
 
-4.  **Clone the Repository:** In Git Bash, use the `git clone` command followed by the URL you copied:
+5.  **Clone the Repository:** In the VS Code terminal, use the `git clone` command followed by the URL you copied:
     ```bash
     git clone [https://github.com/YourUsername/OriginalRepositoryName.git](https://github.com/YourUsername/OriginalRepositoryName.git)
     ```
     This will download a copy of your forked repository to your local machine in a new directory named `OriginalRepositoryName`.
 
-5.  **Navigate into the Cloned Repository:** Use the `cd` command to enter the newly created directory:
+6.  **Navigate into the Cloned Repository:** Use the `cd` command in the VS Code terminal to enter the newly created directory:
     ```bash
     cd OriginalRepositoryName
     ```
 
 ## Step 3: Make Changes Using Visual Studio Code (VS Code)
 
-1.  **Open the Repository in VS Code:** There are several ways to do this:
-    * **From the Command Line:** In your Git Bash terminal (while inside the cloned repository directory), type `code .` and press Enter. This will open VS Code in the current directory.
-    * **From VS Code:** Open VS Code and go to "File" > "Open Folder..." and then navigate to the cloned repository directory and select it.
+1.  **Open the Repository in VS Code (if not already open):** If you haven't already, go to "File" > "Open Folder..." in VS Code and then navigate to the cloned repository directory and select it.
 
 2.  **Make Your Changes:** Use VS Code's editor to modify the files in the repository as needed. You can create new files, edit existing ones, etc.
 
 3.  **Save Your Changes:** After making your modifications, save the files in VS Code (File > Save or Ctrl+S / Cmd+S).
 
-## Step 4: Commit Your Changes Using Git Bash
+## Step 4: Commit Your Changes Using VS Code Terminal
 
-1.  **Open Git Bash (if closed):** If you closed Git Bash, open it again and navigate back to your cloned repository directory using the `cd` command.
+1.  **Open the Integrated Terminal (if closed):** Go to "Terminal" in the top menu and select "New Terminal."
 
-2.  **Check the Status of Your Changes:** Use the `git status` command to see which files have been modified or are untracked:
+2.  **Check the Status of Your Changes:** Use the `git status` command in the VS Code terminal to see which files have been modified or are untracked:
     ```bash
     git status
     ```
@@ -78,7 +78,7 @@ This guide outlines the process of forking a GitHub repository, cloning it to yo
     ```
     Replace `your-new-branch-name` with a descriptive name for your branch.
 
-2.  **Push Your Commits:** Use the `git push` command to upload your local commits to your forked repository on GitHub. You'll typically need to specify the remote name (`origin`) and the branch name:
+2.  **Push Your Commits:** Use the `git push` command in the VS Code terminal to upload your local commits to your forked repository on GitHub. You'll typically need to specify the remote name (`origin`) and the branch name:
     ```bash
     git push origin your-new-branch-name
     ```
@@ -108,4 +108,4 @@ If your goal is to contribute your changes back to the original repository, you'
 
 5.  **Click "Create pull request":** This will submit your changes to the maintainers of the original repository for review. They may provide feedback or merge your changes.
 
-Congratulations! You have successfully forked a GitHub repository, made local changes using VS Code, committed them with Git Bash, and (optionally) created a pull request.
+Congratulations! You have successfully forked a GitHub repository, made local changes using VS Code and its integrated terminal, and (optionally) created a pull request.
