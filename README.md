@@ -69,7 +69,7 @@ This guide outlines the process of forking a GitHub repository, cloning it to yo
 
 1.  **Push Your Commits:** Use the `git push` command in the VS Code terminal to upload your local commits to your forked repository on GitHub. You'll typically need to specify the remote name (`origin`) and the branch name:
     ```bash
-    git push origin your-new-branch-name
+    git push 
     ```
 2.  **Verify on GitHub:** Go to your forked repository on GitHub in your web browser. You should see your new branch and the commits you just pushed.
 
